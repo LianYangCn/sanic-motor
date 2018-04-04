@@ -138,6 +138,9 @@ class BaseModel:
     def __getattr__(self, key):
         """just return None instead of key error"""
         return None
+    
+    def to_dict(self)
+        return self.__dict__
 
     @classmethod
     def get_collection(cls, db=None):
